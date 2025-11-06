@@ -1,104 +1,84 @@
-# FreshImpact 
-# 🍃 AharaSetu — Bridging Food, People, and Sustainability
+# 🌿 FoodImpact — Together Towards Zero Food Waste
 
-AharaSetu is a unified platform designed to **minimize food waste**, **optimize usage**, and **promote sustainable food practices**.  
-It connects households, communities, and organizations through awareness, collaboration, tracking, and composting — supported by an **integrated conversational assistant** that guides users throughout the platform.
+## 🌎 Overview
 
----
+**FoodImpact** is a modern, eco-friendly, full-stack web platform designed to reduce food waste through real-time tracking, sharing, learning, and recycling.  
+It brings together **businesses, consumers, and communities** to build a sustainable ecosystem.
 
-## 🌐 Platform Modules
-
-| Module | Purpose | Primary Users |
-|-------|---------|---------------|
-| **FoodTrack** | Predict and optimize food inventory usage | Hostels, Restaurants, Stores |
-| **FoodShare** | Donate surplus food to NGOs/communities | Hotels, Event organizers, Volunteers |
-| **FoodWise** | Smart meal ideas, waste-reduction habits, gamified daily challenges | Individuals & Families |
-| **FoodCycle** | Steps and guidance for composting and sustainable recycling | Households & Communities |
-
-> **Note:** The **Chat Assistant** is embedded across all modules to help users navigate, suggest actions, and answer queries in real-time.
+💚 *"Together Towards Zero Food Waste."*
 
 ---
 
-## 🧠 Integrated Chat Assistant (Inside Every Module)
+## 🧩 Features
 
-The chatbot helps by:
-- Suggesting **recipes** based on available ingredients (FoodWise)
-- Recommending **purchase quantity** to reduce surplus (FoodTrack)
-- Guiding **safe packing & delivery steps** for donation (FoodShare)
-- Providing **step-by-step composting instructions** (FoodCycle)
-- Answering platform-related doubts any time
+- Clean, minimal, and eco-friendly design (green + white theme)
+- Hero section with CTA buttons: *Explore Modules* and *Join Now*
+- Four interactive module cards:
+  - 📊 **FoodTrack** – Predict demand & optimize inventory  
+  - 🤝 **FoodShare** – Connect surplus food with charities  
+  - 🍽️ **FoodWise** – Recipes, eco-tips & gamified challenges  
+  - 🌱 **FoodCycle** – Composting & recycling guides
+- Impact statistics and success stories section  
+- Smooth animations, parallax scrolling & responsive design  
 
-No separate section — the chatbot works **context-aware** depending on where the user is.
+---
+
+## 🌐 **Modules**
+
+### 1. 📊 **FoodTrack (For Businesses)**
+- Dashboard-style interface with charts & analytics  
+- **Real-time demand prediction** and **spoilage alerts**  
+- Inventory monitoring & Request Demo CTA  
+- Uses **WebSockets / Firebase Realtime** updates for live alerts  
+
+### 2. 🤝 **FoodShare (For Communities & NGOs)**
+- Interactive **map-based interface** showing donors and charities  
+- Real-time updates when new posts are added  
+- Step-by-step process: **Post → Connect → Pickup**  
+- Built using **Firebase Firestore + Leaflet / Mapbox**  
+
+### 3. 🍽️ **FoodWise (For Consumers)**
+- Personalized recipes, food-saving tips, and challenges  
+- **Gamified progress tracker** with live leaderboard  
+- Earn badges and share achievements  
+- “Download App” CTA for mobile version  
+
+### 4. 🌱 **FoodCycle (For Everyone)**
+- Blog-style eco-guides & infographics  
+- User-submitted eco-tips and comments (live updates)  
+- Promotes composting, recycling & sustainable practices  
+
+---
+
+## ⚡ Real-Time Features
+
+| Module | Real-Time Functionality | Tech Used |
+|---------|--------------------------|-----------|
+| FoodTrack | Spoilage alerts, demand prediction updates | Socket.IO / Firestore listeners |
+| FoodShare | Live map updates for donor/charity posts | Firebase Firestore |
+| FoodWise | Dynamic leaderboard and badges | Firestore live snapshots |
+| FoodCycle | Live comments and community tips | Firebase Firestore |
 
 ---
 
 ## 🧱 Tech Stack
 
-- **Frontend:** React + TailwindCSS
-- **Backend:** Node.js / Express (optional microservices)
-- **Database:** Firebase Firestore / Realtime Database
-- **Authentication:** Firebase Auth
-- **Chatbot:** Dialogflow / GPT-based conversational layer
-- **Hosting:** Firebase Hosting / Vercel
+### 💻 Frontend
+- React.js (Generated via Bolt.ai)
+- Tailwind CSS for styling  
+- React Router for navigation  
+- Framer Motion for animations  
 
----
+### ⚙️ Backend
+- Node.js + Express  
+- Socket.IO for real-time communication  
+- REST APIs for CRUD operations  
 
-## ✨ Functional Breakdown
+### 🗄️ Database
+- Firebase Firestore (Realtime updates)
+- Firebase Auth (User Authentication)
 
-### 1️⃣ FoodTrack — *Smart Inventory Planning*
-- Track stock usage daily/weekly
-- AI suggestions to avoid over-purchasing
-- Alert system for nearing expiry items
-- Generates optimized shopping list
-
-**Chatbot role:**  
-“Based on your past week usage, reduce your rice purchase by 2kg this week.”
-
----
-
-### 2️⃣ FoodShare — *Donation Bridge*
-- List surplus food easily
-- Locate nearest verified NGOs/volunteers
-- Pickup coordination + live update logs
-- Proof-of-donation records
-
-**Chatbot role:**  
-“You have 4 servings of extra food. Want me to connect you to 'HelpingHands NGO' nearby?”
-
----
-
-### 3️⃣ FoodWise — *Smart Home Food Habits*
-- Personalized recipes from **what you already have**
-- Daily mini waste-reduction challenges
-- Points → badge → leaderboard
-- Community tips/sharing wall
-
-**Chatbot role:**  
-“Try using leftover rice to make lemon rice. Here’s a quick method 👇 …”
-
----
-
-### 4️⃣ FoodCycle — *Sustainable Disposal & Composting*
-- Easy composting tutorials
-- Track compost progress
-- Guides for sorting & recycling at home
-
-**Chatbot role:**  
-“Add more dry waste to balance moisture in your compost bin.”
-
----
-
-## 🚀 Why AharaSetu?
-
-Because food is not just nutrition — it’s a **responsibility**.  
-AharaSetu connects **awareness → action → impact**, all in one ecosystem.
-
----
-
-## 🖥️ Setup Instructions (Quick Start)
-
-```bash
-git clone <repo-url>
-cd aharasetu
-npm install
-npm start
+### 🌍 Deployment
+- **Frontend:** Vercel / Netlify / Bolt.ai export  
+- **Backend:** Render / Railway / Firebase Functions  
+- **Database & Auth:** Firebase  
